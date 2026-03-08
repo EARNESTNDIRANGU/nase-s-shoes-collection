@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nase Shoes | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="shop.html" class="active">SHOP NOW</a>
+    </nav>
+
+    <h1 class="graphical-title">NASE'S SHOES BEST COLLECTION</h1>
+
+    <div class="gallery">
+        <div class="shoe">
+            <img src="shoe1_collection.jpg" onclick="showImage(this)">
+            <h3>Air Runner</h3>
+        </div>
+        <div class="shoe">
+            <img src="shoe2_collection.jpg" onclick="showImage(this)">
+            <h3>Street Flex</h3>
+        </div>
+        <div class="shoe">
+            <img src="shoe3_collection.jpg" onclick="showImage(this)">
+            <h3>Urban Style</h3>
+        </div>
+        <div class="shoe">
+            <img src="shoe4_collection.jpg" onclick="showImage(this)">
+            <h3>Your Best Style</h3>
+        </div>
+        <div class="shoe">
+            <img src="shoe5_collection.jpg" onclick="showImage(this)">
+            <h3>Elite Comfort</h3>
+        </div>
+    </div>
+
+    <div id="imageFocus" class="focus-overlay" onclick="closeImage()">
+        <span class="close-btn">&times;</span>
+        <div class="focus-content" onclick="event.stopPropagation()">
+            <img id="focusedImg" src="">
+            <h3 id="focusName"></h3>
+            <a id="focusWA" href="" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
