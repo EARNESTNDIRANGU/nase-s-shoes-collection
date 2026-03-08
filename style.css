@@ -1,0 +1,104 @@
+/* Core Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000; /* Black Background */
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #b22222;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a.active { color: #b22222; }
+
+/* Animated Graphical Title */
+.graphical-title {
+    font-size: 40px;
+    background: linear-gradient(to right, #b22222, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+.graphical-title:hover {
+    letter-spacing: 5px;
+    transform: scale(1.05);
+}
+
+/* Shoe Cards & Moving Hover */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.shoe {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* The moving hover effect you liked */
+.shoe:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(178, 34, 34, 0.5);
+}
+
+.shoe img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Full-Page Focus Mode */
+.focus-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+}
+
+#focusedImg {
+    max-width: 90%;
+    max-height: 70vh;
+    border: 2px solid #b22222;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.cta-button, .whatsapp-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #b22222;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.whatsapp-btn { background: #25D366; }
+.close-btn { position: absolute; top: 20px; right: 40px; font-size: 50px; cursor: pointer;}
