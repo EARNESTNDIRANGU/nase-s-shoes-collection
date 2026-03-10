@@ -28,11 +28,23 @@ body {
 /* Animated Graphical Title */
 .graphical-title {
     font-size: 40px;
-    background: linear-gradient(to right, #b22222, #fff);
+    /* 1. Make the gradiet wider than the text so it has room to move */
+    background: linear-gradient(to right,#b22222#fff,#b22222);
+    background-size: 200% auto;
+
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.5s;
+    -webkit-text-fill-color: pink;
     letter-spacing: 2px;
+    transition: 0.5s;
+
+    /* 2. Link the animation name below */
+    animation:shine 3s linear infinite;
+}
+/* 3.Create the movement effect */
+@keyframes shine{
+    to{
+        background-position: 200% center;
+    }
 }
 
 .graphical-title:hover {
@@ -101,4 +113,5 @@ body {
 }
 
 .whatsapp-btn { background: #25D366; }
+
 .close-btn { position: absolute; top: 20px; right: 40px; font-size: 50px; cursor: pointer;}
