@@ -57,8 +57,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    padding: 50px;
+    gap: 10px;/*Reduced gap slightly for mobile/small screens */
+    padding: 20px 0;/*Vertical  padding only ,let width be 100% */
+    width: 100%;/*Forces the gallery to take the full width  */
+
+}
+
+.gallery>div{
+    flex:1 1 300px;/*Grow to fill space, but not smaller than 300px */
+    max-width: 100%;/*Ensure they don't go off-screen on mobile */
+}
+ 
+.gallery img {
+    width:100%;/*Makes the image fill the whole card */
+    height: auto;/*Keeps the shoe from looking stretched */
+    display: block;
 }
 
 .shoe {
@@ -115,3 +128,4 @@ body {
 .whatsapp-btn { background: #25D366; }
 
 .close-btn { position: absolute; top: 20px; right: 40px; font-size: 50px; cursor: pointer;}
+
