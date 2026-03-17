@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nase Shoes | Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,38 +11,48 @@
         <a href="index.html">HOME</a>
         <a href="shop.html" class="active">SHOP NOW</a>
     </nav>
+    <div class="circle-swarm">
+    <div class="stat-circle c1">PREMIUM</div>
+    <div class="stat-circle c2">2026</div>
+    <div class="stat-circle c3">ELITE</div>
+    <div class="stat-circle c4">FAST</div>
+    <div class="stat-circle c5">STYLE</div>
+    <div class="stat-circle c6">CLASS</div>
+    <div class="stat-circle c7">COMFORT</div>
+    <div class="stat-circle c8">NASE</div>
+    <div class="stat-circle c9">QUALITY</div>
+    <div class="stat-circle c10">SHINE</div>
+</div>
 
-    <h1 class="graphical-title">NASE'S SHOES BEST COLLECTION</h1>
+    <h1 class="graphical-title">THE 2026 COLLECTION</h1>
+    <div class="circle-container">
+    <div class="stat-circle circle-1">PREMIUM QUALITY</div>
+    <div class="stat-circle circle-2">FAST DELIVERY</div>
+    <div class="stat-circle circle-3">2026 DESIGN</div>
+    <div class="stat-circle circle-4">BEST COMFORT</div>
+</div>
 
-    <div class="gallery">
-        <div class="shoe">
-            <img src="shoe1_collection.jpg" onclick="showImage(this)">
-            <h3>Air Runner</h3>
-        </div>
-        <div class="shoe">
-            <img src="shoe2_collection.jpg" onclick="showImage(this)">
-            <h3>Street Flex</h3>
-        </div>
-        <div class="shoe">
-            <img src="shoe3_collection.jpg" onclick="showImage(this)">
-            <h3>Urban Style</h3>
-        </div>
-        <div class="shoe">
-            <img src="shoe4_collection.jpg" onclick="showImage(this)">
-            <h3>Your Best Style</h3>
-        </div>
-        <div class="shoe">
-            <img src="shoe5_collection.jpg" onclick="showImage(this)">
-            <h3>Elite Comfort</h3>
-        </div>
+<div class="gallery">
     </div>
 
+    <div class="gallery">
+        <div class="shoe"><img src="shoe1_collection.jpg" onclick="showImage(this)"><h3>Air Runner</h3></div>
+        <div class="shoe"><img src="shoe2_collection.jpg" onclick="showImage(this)"><h3>Street Flex</h3></div>
+        <div class="shoe"><img src="shoe3_collection.jpg" onclick="showImage(this)"><h3>Urban Style</h3></div>
+        <div class="shoe"><img src="shoe4_collection.jpg" onclick="showImage(this)"><h3>Midnight Walker</h3></div>
+        <div class="shoe"><img src="shoe5_collection.jpg" onclick="showImage(this)"><h3>Elite Comfort</h3></div>
+    </div>
+
+    <a href="https://wa.me/254712345678?text=Hello%20Nase,%20I%20want%20to%20buy%20shoes" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+        <span>Chat with Nase</span>
+    </a>
+
     <div id="imageFocus" class="focus-overlay" onclick="closeImage()">
-        <span class="close-btn">&times;</span>
         <div class="focus-content" onclick="event.stopPropagation()">
             <img id="focusedImg" src="">
-            <h3 id="focusName"></h3>
-            <a id="focusWA" href="" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+            <h3 id="focusName" style="margin: 20px 0;"></h3>
+            <a id="focusWA" href="#" class="whatsapp-btn" target="_blank">ORDER NOW</a>
         </div>
     </div>
 
